@@ -1,0 +1,20 @@
+{
+  "name": "name",
+  "version": "0.0.1",
+  "slug": "{{cookiecutter.name.lower().replace(' ', '_').replace('-', '_')}}",
+  "slug_upper": "{{cookiecutter.name.upper().replace(' ', '_').replace('-', '_')}}",
+  "desc": "Project description",
+  "repo": "https://github.com/account/{{cookiecutter.slug}}",
+  "url": "{{cookiecutter.repo}}",
+  "author": "Author Name",
+  "email": "address@server.io",
+  "author_and_email": "{{cookiecutter.author}}{% if cookiecutter.email %} <{{cookiecutter.email}}>{% endif %}",
+  "create_author_file": "y",
+  "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
+  "standalone": "y",
+  "travis": "y",
+  "appveyor": "y",
+  "coveralls": "y",
+  "codecov": "y",
+  "lgtm": "y"
+}

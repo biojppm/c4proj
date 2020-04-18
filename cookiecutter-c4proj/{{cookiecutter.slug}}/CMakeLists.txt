@@ -1,19 +1,19 @@
 cmake_minimum_required(VERSION 3.9)
-project({{proj.name}})
+project({{cookiecutter.slug}})
 
 include(./c4proj/c4Project.cmake)
 
-c4_declare_project({{proj.name}}{% if proj.standalone %} STANDALONE{% endif %}
-    DESC "{{proj.desc}}"
-    {% if author %}AUTHOR "{{author.name}}{% if author.email %} <{{author.email}}>{% endif %}"{% endif %}
-    URL "{{proj.url}}"
+c4_declare_project({{cookiecutter.name}}{% if cookiecutter.standalone %} STANDALONE{% endif %}
+    DESC "{{cookiecutter.desc}}"
+    {% if cookiecutter.author %}AUTHOR "{{cookiecutter.author}}{% if cookiecutter.email %} <{{cookiecutter.email}}>{% endif %}"{% endif %}
+    URL "{{cookiecutter.url}}"
     MAJOR 0 MINOR 0 RELEASE 1)
 
 
 #-------------------------------------------------------
 
-option({{uproj}}_CUSTOM_OPTION1 "A custom cmake option" ON)
-option({{uproj}}_CUSTOM_OPTION2 "Another custom cmake option" ON)
+option({{cookiecutter.slug}}_CUSTOM_OPTION1 "A custom cmake option" ON)
+option({{cookiecutter.slug}}_CUSTOM_OPTION2 "Another custom cmake option" ON)
 
 
 #-------------------------------------------------------
