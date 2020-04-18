@@ -1,1 +1,3 @@
 cookiecutter >=1.7
+gitpython
+ruamel.yaml

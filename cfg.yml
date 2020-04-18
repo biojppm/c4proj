@@ -1,0 +1,32 @@
+# c4proj settings
+# https://github.com/biojppm/c4proj
+  
+# general info on the project
+name: projname
+version: 0.0.1
+license: MIT # one of: MIT, BSD, ISC, Apache 2.0, GPLv3, None
+desc: A short description of your project
+repo: https://github.com/account/repo
+url: # defaults to repo
+author: Author Name
+email: address@server.io
+
+#slug: # lower-case slug
+#slugu: # upper-case slug
+#slugk: # kebab-case slug
+#slugc: # camel-case slug
+
+
+# CMake+build settings
+standalone: 1
+test: 1
+benchmarks: 1
+api: 1
+
+
+# CI
+travis: 1
+appveyor: 1
+coveralls: 1
+codecov: 1
+lgtm: 1
